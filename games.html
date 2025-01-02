@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathaniel Laing Portfolio</title>
+    <link rel="stylesheet" href="Style/styles.css">
+
+</head>
+<body style="background-color: whitesmoke; margin-bottom: 250px;">
+    <div class="sidebar">
+       <div class="top">
+            <div class="icon">
+                <img src="Graphics/Icons/block.png">
+                <span>Nate Laing</span>
+            </div>
+            <img id="btn" src="Graphics/Icons/menu.svg">
+       </div>
+       <div class="user">
+            <img src="Graphics/Icons/me_icon.JPG" class="user-img">
+            <div style="margin-top: 25px;">
+                Explore
+            </div>
+       </div>
+       <ul>
+            <li>
+                <a href="index.html">
+                    <img class="nav-icon" src="Graphics/Icons/home.svg">
+                    <span class="nav-item">Home</span>
+                </a>
+                <span class="external-label">Home</span>
+            </li>
+            <li>
+                <a href="games.html">
+                    <img class="nav-icon" src="Graphics/Icons/joystick.svg">
+                    <span class="nav-item">Games</span>
+                </a>
+                <span class="external-label">Games</span>
+            </li>
+            <li>
+                <a href="websites.html">
+                    <img class="nav-icon" src="Graphics/Icons/web.svg">
+                    <span class="nav-item">Websites</span>
+                </a>
+                <span class="external-label">Websites</span>
+            </li>
+            <li>
+                <a href="other.html">
+                    <img class="nav-icon" src="Graphics/Icons/star.svg">
+                    <span class="nav-item">Other</span>
+                </a>
+                <span class="external-label">Other</span>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <img class="nav-icon" src="Graphics/Icons/contact_page.svg">
+                    <span class="nav-item">Contact</span>
+                </a>
+                <span class="external-label">Contact</span>
+            </li>
+       </ul>
+    </div>
+    <div class="main-content">
+        <div class="container" style="display: block;">
+            <h1 style="font-size: 64px; margin-top: 16px;">Games</h1>
+            <h2>About</h2>
+            <p style="font-size: 24px; margin-top: 5px;">
+                Video game development is what originally got be interested in computer science. At a first, it was a matter of design, but now I am pulled in 
+                by the technical elements: Making virtual worlds with various systems that connect. I love game development as an outlet for creativity and computer 
+                science. I have created various games across two engines, Godot and Pygame. Below you can find the various games that I have made.
+            </p>
+        </div>
+        <div class="container" style="display: block;">
+            <h1 style="font-size: 36px; margin-top: 16px;">Cultus Astrorum</h1>
+            <div style="display: flex;">
+                <div id="carousel1" class="slideshow-container">
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">1 / 5</div>
+                        <img src="Graphics/Games/Cult/cult_1.png">
+                        <div class="slideshow-text">Title screen</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">2 / 5</div>
+                        <img src="Graphics/Games/Cult/cult_2.png">
+                        <div class="slideshow-text">Combat</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">3 / 5</div>
+                        <img src="Graphics/Games/Cult/cult_3.png">
+                        <div class="slideshow-text">Baked Lights</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">4 / 5</div>
+                        <img src="Graphics/Games/Cult/cult_4.png">
+                        <div class="slideshow-text">Props</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">5 / 5</div>
+                        <img src="Graphics/Games/Cult/cult_5.png">
+                        <div class="slideshow-text">Interactables</div>
+                    </div>
+
+                    <a class="prev"  onclick="cycleSlides(-1, 'carousel1')">&#10094;</a>
+                    <a class="next" onclick="cycleSlides(1, 'carousel1')">&#10095;</a>
+                </div>
+                <p class="item-description">
+                    Cultus Astrorum is a first person shooter demo I made for my IB CAS project. With the game, I got to learn a lot about game development.
+                    The game features pathfinding enemies with skeletal animations, multiple weapons, cutscenes, objectives, etc. The game also features a saving
+                    system which allows for saving the entire state of the game (it saves the enemy positions, present objects, everything). One thing I focused on was 
+                    environmental interaction. In the game, you can break crates, pick up weapons and items, eat food, flush toilets, and toggle sinks. I made various 3D
+                    models for the game. For performence, baked lighting is also utilized. Overall, this was a very fun and challenging project that allowed me to improve
+                    at 3D game development.
+                </p>
+            </div>
+        </div>
+        <div class="container" style="display: block;">
+            <h1 style="font-size: 36px; margin-top: 16px;">Abocastasis Abaddon</h1>
+            <div style="display: flex;">
+                <div id="carousel2" class="slideshow-container">
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">1 / 4</div>
+                        <img src="Graphics/Games/Race/race_1.png">
+                        <div class="slideshow-text">Title Screen</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">2 / 4</div>
+                        <img src="Graphics/Games/Race/race_2.png">
+                        <div class="slideshow-text">Racing Action</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">3 / 4</div>
+                        <img src="Graphics/Games/Race/race_3.png">
+                        <div class="slideshow-text">Explosions</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">4 / 4</div>
+                        <img src="Graphics/Games/Race/race_4.png">
+                        <div class="slideshow-text">Gradual Damage</div>
+                    </div>
+                    <a class="prev" onclick="cycleSlides(-1, 'carousel2')">&#10094;</a>
+                    <a class="next" onclick="cycleSlides(1, 'carousel2')">&#10095;</a>
+                </div>
+                <p class="item-description">
+                    This is a demo for a combat focused racing game. In the game, the player drives around a track, passing through each checkpoint and 
+                    fighting other cars. The game has five weapons that can be used against your opponents including miniguns, rockets, and mines. You can also 
+                    pick up items to repair your car from damage. As a car gets more damaged, its performence is reduced, and a fire on it begins to grow larger. 
+                    There are also physics objects you can run into, including explosive barrels. The game has A.I. opponents who will attack the player and 
+                    race around the track. The checkpoint system is used to track race placements for the player and end rankings. Overall, this game was 
+                    my first deep dive into 3D game development and I created a demo that I am satisfied with.
+                </p>
+            </div>
+        </div>
+        <div class="container" style="display: block;">
+            <h1 style="font-size: 36px; margin-top: 16px;">Dwarfenstein</h1>
+            <div style="display: flex;">
+                <div id="carousel3" class="slideshow-container">
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">1 / 4</div>
+                        <img src="Graphics/Games/Dwarf/dwarf_1.png">
+                        <div class="slideshow-text">Forest Level</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">2 / 4</div>
+                        <img src="Graphics/Games/Dwarf/dwarf_2.png">
+                        <div class="slideshow-text">Mine Level</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">3 / 4</div>
+                        <img src="Graphics/Games/Dwarf/dwarf_4.png">
+                        <div class="slideshow-text">Mind Level</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">4 / 4</div>
+                        <img src="Graphics/Games/Dwarf/dwarf_3.png">
+                        <div class="slideshow-text">Final Boss</div>
+                    </div>
+
+                    <a class="prev" onclick="cycleSlides(-1, 'carousel3')">&#10094;</a>
+                    <a class="next" onclick="cycleSlides(1, 'carousel3')">&#10095;</a>
+                </div>
+                <p class="item-description">
+                    Dwarfenstein is a "pseudo-3D" FPS rouge-like Pygame. In the game, the player goes through three sets of randomly generated dungeons 
+                    before fighting a boss. The game has four weapons to find and ten enemies (including the final boss). The most notable thing about the 
+                    game is the 3D effect. Created with help from a <a href="https://www.youtube.com/watch?v=ECqUrT7IdqQ">tutorial by Youtuber Coder Space</a>
+                    the game uses raycasting and other techniques to give the appearence of a 3D space in a technically 2D environment. The game has floors, objects,
+                    items, and enemies. The other thing to note is the randomly generated dungeons. The game uses a random walk algorithm to generated maze levels 
+                    for the player to navigate. For this feature I was inspired by a Unity tutorial but I did all of the coding alone. The game's enemies fight the 
+                    player using pathfinding capabilities (also based on the Coder Space tutorial). I also feel like I learned a lot from doing the art for the game.
+                    I made use of color theory to create colorful and striking art. I feel that this is my best looking game.
+                </p>
+            </div>
+        </div>
+        <div class="container" style="display: block;">
+            <h1 style="font-size: 36px; margin-top: 16px;">ME</h1>
+            <div style="display: flex;">
+                <div id="carousel4" class="slideshow-container">
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">1 / 5</div>
+                        <img src="Graphics/Games/Me/me_1.png">
+                        <div class="slideshow-text">Title Screen</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">2 / 5</div>
+                        <img src="Graphics/Games/Me/me_2.png">
+                        <div class="slideshow-text">Exploration</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">3 / 5</div>
+                        <img src="Graphics/Games/Me/me_3.png">
+                        <div class="slideshow-text">Combat</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">4 / 5</div>
+                        <img src="Graphics/Games/Me/me_4.png">
+                        <div class="slideshow-text">Final Boss</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">5 / 5</div>
+                        <img src="Graphics/Games/Me/me_5.png">
+                        <div class="slideshow-text">Gravity Swapping</div>
+                    </div>
+                    <a class="prev" onclick="cycleSlides(-1, 'carousel4')">&#10094;</a>
+                    <a class="next" onclick="cycleSlides(1, 'carousel4')">&#10095;</a>
+                </div>
+                <p class="item-description">
+                    ME is an exploration platformer game. In the game you go through a level with traps and enemies. In the level, you must collect four different upgrades
+                    as each is neccessary to progress in the level. The upgrades range from making certain platforms and enemies visible to giving the player the power to swap 
+                    gravity. At the end you fight a boss based on myself. The most notable thing about this game is the unsettling nature of the game's graphics. The game features 
+                    animated enemies, traps and projectiles. These entities use graphics I made using pictures of myself. The game looks weird yet the style is cohesive and unique.
+                    I made this game to familarize myself with the Godot engine. In this respect, the project was a success since I feel I improved my capabilities with the engine 
+                    over the course of this game's development.
+                </p>
+            </div>
+        </div>
+        <div class="container" style="display: block;">
+            <h1 style="font-size: 36px; margin-top: 16px;">Minigolf Mayhem</h1>
+            <div style="display: flex;">
+                <div id="carousel5" class="slideshow-container">
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text" style="color: black;">1 / 4</div>
+                        <img src="Graphics/Games/Golf/golf_1.png">
+                        <div class="slideshow-text">First Level</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text" style="color: black;">2 / 4</div>
+                        <img src="Graphics/Games/Golf/golf_2.png">
+                        <div class="slideshow-text">Dangerous Hazards</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text" style="color: black;">3 / 4</div>
+                        <img src="Graphics/Games/Golf/golf_3.png">
+                        <div class="slideshow-text">Desert</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text" style="color: black;">4 / 4</div>
+                        <img src="Graphics/Games/Golf/golf_4.png">
+                        <div class="slideshow-text">Castle</div>
+                    </div>
+
+                    <a class="prev" onclick="cycleSlides(-1, 'carousel5')">&#10094;</a>
+                    <a class="next" onclick="cycleSlides(1, 'carousel5')">&#10095;</a>
+                </div>
+                <p class="item-description">
+                    Minigolf Mayhem is a minigolf game demo with complex level design. It generates maps using .csv files created in a tile based 
+                    map editor. You navigate these maps using a golf ball that you can swing around. However, you only have a limited number of 
+                    swings and lives. You must also avoid obstacles such as holes, fire, and water. There are various contraptions in the maps such 
+                    as arrows which control the direction of the ball, electric lamps that turn on and off, etc. The ball behaves differently on 
+                    different surfaces. It receives the most friction on sand and the least on ice. The maps are also fitted with various decorations 
+                    which fade when close to the ball.
+                </p>
+            </div>
+        </div>
+        <div class="container" style="display: block;">
+            <h1 style="font-size: 36px; margin-top: 16px;">Alien Game</h1>
+            <div style="display: flex;">
+                <div id="carousel6" class="slideshow-container">
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">1 / 3</div>
+                        <img src="Graphics/Games/Alien Game/alien_3.png">
+                        <div class="slideshow-text">Title Screen</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">2 / 3</div>
+                        <img src="Graphics/Games/Alien Game/alien_1.png">
+                        <div class="slideshow-text">Action</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">3 / 3</div>
+                        <img src="Graphics/Games/Alien Game/alien_2.png">
+                        <div class="slideshow-text">Growth</div>
+                    </div>
+
+                    <a class="prev" onclick="cycleSlides(-1, 'carousel6')">&#10094;</a>
+                    <a class="next" onclick="cycleSlides(1, 'carousel6')">&#10095;</a>
+                </div>
+                <p class="item-description">
+                    Alien game is an action arcade game about staying alive via managing various elements. Your health is represented by a red bar,
+                    it is constantly depleting. Killing enemies will give you health but reduce your size. To regain size you must collect the power 
+                    ups by shooting them. There are two types of projectiles. Teleports collect the power ups but will hurt you if used on enemies.
+                    Bullets kill the enemies but will destroy the power ups. In terms of theming, the game is presented as if it was made by aliens.
+                    It uses alien language with images and music we have beamed into space.
+                </p>
+            </div>
+        </div>
+        <div class="container" style="display: block;">
+            <h1 style="font-size: 36px; margin-top: 16px;">Flightgoria</h1>
+            <div style="display: flex;">
+                <div id="carousel7" class="slideshow-container">
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">1 / 5</div>
+                        <img src="Graphics/Games/Flight/flight_1.png">
+                        <div class="slideshow-text">Title Screen</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">2 / 5</div>
+                        <img src="Graphics/Games/Flight/flight_2.png">
+                        <div class="slideshow-text">Sky Combat</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">3 / 5</div>
+                        <img src="Graphics/Games/Flight/flight_3.png">
+                        <div class="slideshow-text">Enemy Projectiles</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">4 / 5</div>
+                        <img src="Graphics/Games/Flight/flight_4.png">
+                        <div class="slideshow-text">Many Obstacles</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">5 / 5</div>
+                        <img src="Graphics/Games/Flight/flight_5.png">
+                        <div class="slideshow-text">Dangerous Enemies</div>
+                    </div>
+                    <a class="prev" onclick="cycleSlides(-1, 'carousel7')">&#10094;</a>
+                    <a class="next" onclick="cycleSlides(1, 'carousel7')">&#10095;</a>
+                </div>
+                <p class="item-description">
+                    Flightgoria is a top down flight shooter game. In the game you must pass various enemies before getting to a final boss.
+                    The enemies include static enemies that you must fly around, enemies that will shoot projectiles at you, and more. Various backgrounds
+                    are vertically scrolled in the background to give the illusion of constant flight forward. Along the way, you can also collect pickups to 
+                    make your shots more powerful and to regain health. This game was the second I ever made on my own. Compared to my first game (not shown), 
+                    I progressed a lot in terms of visuals and gameplay.
+                </p>
+            </div>
+        </div>
+        <div class="container" style="display: block;">
+            <h1 style="font-size: 36px; margin-top: 16px;">Zane's Odyssey</h1>
+            <div style="display: flex;">
+                <div id="carousel8" class="slideshow-container">
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">1 / 5</div>
+                        <img src="Graphics/Games/Zane/zane_5.png">
+                        <div class="slideshow-text">Instructions</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">2 / 5</div>
+                        <img src="Graphics/Games/Zane/zane_1.png">
+                        <div class="slideshow-text">Action</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">3 / 5</div>
+                        <img src="Graphics/Games/Zane/zane_2.png">
+                        <div class="slideshow-text">Tricks</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">4 / 5</div>
+                        <img src="Graphics/Games/Zane/zane_3.png">
+                        <div class="slideshow-text">NPCs</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">5 / 5</div>
+                        <img src="Graphics/Games/Zane/zane_4.png">
+                        <div class="slideshow-text">Game Over</div>
+                    </div>
+                    <a class="prev" onclick="cycleSlides(-1, 'carousel8')">&#10094;</a>
+                    <a class="next" onclick="cycleSlides(1, 'carousel8')">&#10095;</a>
+                </div>
+                <p class="item-description">
+                    In this game you play has a teenager in the early 2010s trying to go viral. You ride down a mountain in a cart avoiding hikers 
+                    and various obstacles. If you hit an obstacle you stop and lose "Virality Points", if you hit a person then it ends the game. 
+                    You can do tricks on ramps to gain points. The game is themed after early 2010s internet culture with many references to jokes 
+                    that were popular in that period. The game also has a good and bad ending depending on how many points you have at the end.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="display: block;">
+        <h1 style="font-size: 36px; margin-top: 16px;">Crazy Oregon Trail</h1>
+        <div style="display: flex;">
+            <div id="carousel9" class="slideshow-container">
+                <div class="slideshow-image">
+                    <div class="slideshow-number-text">1 / 5</div>
+                    <img src="Graphics/Games/Oregon Trail/oregon_1.png">
+                    <div class="slideshow-text">Title Screen</div>
+                </div>
+                <div class="slideshow-image">
+                    <div class="slideshow-number-text">2 / 5</div>
+                    <img src="Graphics/Games/Oregon Trail/oregon_2.png">
+                    <div class="slideshow-text">Gathering</div>
+                </div>
+                <div class="slideshow-image">
+                    <div class="slideshow-number-text">3 / 5</div>
+                    <img src="Graphics/Games/Oregon Trail/oregen_3.png">
+                    <div class="slideshow-text">Random Events</div>
+                </div>
+                <div class="slideshow-image">
+                    <div class="slideshow-number-text">4 / 5</div>
+                    <img src="Graphics/Games/Oregon Trail/oregon_4.png">
+                    <div class="slideshow-text">Combat</div>
+                </div>
+                <div class="slideshow-image">
+                    <div class="slideshow-number-text">5 / 5</div>
+                    <img src="Graphics/Games/Oregon Trail/oregon_5.png">
+                    <div class="slideshow-text">Choices</div>
+                </div>
+                <a class="prev" onclick="cycleSlides(-1, 'carousel9')">&#10094;</a>
+                <a class="next" onclick="cycleSlides(1, 'carousel9')">&#10095;</a>
+            </div>
+            <p class="item-description">
+                This was a game I made for my AP CSP Create Task. It was inspired by the 1971 game <em>The Oregon Trail</em>. The game mixes the original game with 
+                mad libs in a text based adventure. The game's structure is split up into days. Each day you can gather supplies before proceeding into a random event.
+                These random events can include combat, trading, decisions, etc. They are preceded by randomly selected introductory events, such as stopping at a sign 
+                to choose a direction to go in. The game has a character system where each character has four stats that determine combat and their actions in certain 
+                situations. They also each have their own health values. You start out with five characters but you can gain more, or lose some to combat and disease. 
+                The game is filled with various locations, character names, and objects randomly chosen from large lists of strings. You may have Batman find various copies 
+                of <em>1984</em> one night or go into combat with Napoleon. Overall, this was a fun project and I learned a lot about Python and random generation.
+            </p>
+        </div>
+    </div>
+    <footer>
+        @nate.r.laing@gmail.com - (470) 808-9146
+    </footer>
+</body>
+
+<script>
+    let btn = document.querySelector('#btn');
+    let sidebar = document.querySelector('.sidebar');
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    };
+
+    document.addEventListener('scroll', function()
+    {
+        let currentScroll = window.scrollY + window.innerHeight;
+        let footer = document.querySelector('footer');
+
+        if (currentScroll + 200 > document.body.scrollHeight)
+        {
+            footer.classList.add('active');
+        }
+        else {
+            footer.classList.remove('active');
+        }
+    }
+    )
+
+    let slideIndex = 1;
+    let slide_containers = document.getElementsByClassName("slideshow-container");
+
+    for (i = 0; i < slide_containers.length; i++)
+    {
+        showSlides(slideIndex, slide_containers[i].id);
+    }
+
+    function cycleSlides(n, i) {
+        showSlides(slideIndex += n, i);
+    }
+
+    function showSlides(n, j) {
+        let i;
+        console.log(j);
+        let slides = document.getElementById(j).children;
+        slides = Array.from(slides).slice(0, slides.length - 2);
+        console.log(slides);
+        if (n > slides.length) {slideIndex = 1}   
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[slideIndex-1].style.display = "block";  
+    }
+</script>
+</html>

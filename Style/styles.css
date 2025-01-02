@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    display:flex;
+    margin-left: 15%;
+    margin-bottom: 50px;
+}
+.grid {
+    display: grid;
+
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 500px 500px;
+
+    padding: 10px;
+    margin-right: 10%;
+
+    text-align: center;
+    font-size: 24px;
+}
+.grid div figure img {
+    width: 300px;
+    border-radius: 50px;
+}
+.large-image {
+
+    margin: 5%;
+    width: 750px;
+    border-radius: 35px;
+
+    border-width: 5px;
+    border-style: solid;
+    border-color:rgb(40, 46, 53);
+}
+footer {
+
+    text-align: center;
+    color: whitesmoke;
+    padding: 25px;
+    background-color: rgb(40, 46, 53);
+
+    position: fixed;
+    left: 0;
+    bottom: -80px;
+    width: 100%;
+
+    transition: bottom 0.5s;
+}
+footer.active {
+    opacity: 1;
+
+    bottom: 0px;
+    transition: bottom 0.5s;
+}
+.sidebar .user {
+    text-align: center;
+}
+.user-img {
+    width: 50px;
+    border-radius: 100%;
+    
+    border-style: solid;
+    border-color:whitesmoke;
+
+    margin-top: 15px;
+    
+    transition: width 0.5s;
+}
+.sidebar.active .user .user-img {
+    width: 100px;
+    transition: width 0.5s;
+}
+.nav-icon {
+
+    position: absolute;
+
+    width: 36px;
+    left: 25%;
+
+    border-radius: 20%;
+
+}
+.sidebar {
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80px;
+
+    background-color:rgb(40, 46, 53);
+    color:whitesmoke;
+
+    transition: width 1s;
+    z-index: 1;
+}
+
+.sidebar.active ~ .main-content {
+    left: 250px;
+    width: calc(100% - 250px);
+}
+
+.sidebar.active {
+    width: 250px;
+    transition: width 1s;
+}
+.sidebar.active #btn {
+    width: 50px;
+    transition: width 1s;
+}
+.sidebar #btn {
+    width: 24px;
+    transition: width 1s;
+}
+.sidebar ul li {
+    position: relative;
+    margin: 75px auto;
+}
+.sidebar.active ul li {
+    border-radius: 50px;
+    padding: 20px;
+    background-color: whitesmoke;
+
+    text-align: center;
+
+    margin: 55px 50px;
+
+    list-style-type: none;
+}
+.sidebar ul li:hover a .nav-icon {
+    background-color: whitesmoke;
+    padding: 5px;
+
+    transition: background-color 0.5s;
+    transition: padding 0.5s;
+}
+.sidebar ul li:hover .external-label{
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.sidebar ul li .external-label {
+
+    opacity: 0;
+
+    position: absolute;
+    display: inline-block;
+
+    left: 90px;
+    top: -20px;
+
+    background-color: rgb(255, 255, 255);
+    color:rgb(40, 46, 53);
+
+    border-radius: 25px;
+
+    padding: 25px 40px;
+
+}
+.sidebar.active ul li .external-label {
+    display: none;
+}
+.sidebar .nav-item {
+    display: none;
+    color: rgb(0, 0, 0, 0);
+}
+.sidebar.active .nav-item {
+    display: inline-block;
+
+    transition: color 0.5s 0.5s;
+    color:rgb(40, 46, 53);
+}
+.sidebar ul li a img {
+    display: block;
+}
+.sidebar.active ul li a img {
+    display: none;
+}
+.sidebar .top .icon img {
+    width: 24px;
+    transition: width 0.5s;
+}
+.sidebar.active .top .icon img {
+    width: 48px;
+    transition: width 0.5s 0.3s;
+}
+.sidebar .top .icon span {
+    position: absolute;
+
+    margin-top: 8px;
+    margin-left: 5px;
+    font-size: 8px;
+
+    transition: all 0.5s;
+}
+.sidebar.active .top .icon span {
+
+    margin-left: 15px;
+    font-size: 30px;
+
+    transition: all 0.5s 0.3s;
+}
+
+.slideshow-container {
+    max-width: 100px;
+    position: relative;
+}
+.slideshow-image {
+    display: none;
+}
+.slideshow-image img {
+    width: 300px; 
+
+    border-radius: 50px;
+    margin-right: 24px;
+    width: 500px;
+}
+.slideshow-text {
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.slideshow-number-text {
+    color: whitesmoke;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 10px;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -28px;
+    padding: 16px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 24px;
+    user-select: none;
+}
+.next {
+    right: -400px;
+    border-radius: 3px 0 0 3px;
+}
+
+.item-description {
+    font-size: 20px; 
+    margin-top: 5px; 
+    margin-left: 454px;
+}

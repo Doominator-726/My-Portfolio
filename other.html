@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathaniel Laing Portfolio</title>
+    <link rel="stylesheet" href="Style/styles.css">
+
+</head>
+<body style="background-color: whitesmoke; margin-bottom: 250px;">
+    <div class="sidebar">
+       <div class="top">
+            <div class="icon">
+                <img src="Graphics/Icons/block.png">
+                <span>Nate Laing</span>
+            </div>
+            <img id="btn" src="Graphics/Icons/menu.svg">
+       </div>
+       <div class="user">
+            <img src="Graphics/Icons/me_icon.JPG" class="user-img">
+            <div style="margin-top: 25px;">
+                Explore
+            </div>
+       </div>
+       <ul>
+            <li>
+                <a href="index.html">
+                    <img class="nav-icon" src="Graphics/Icons/home.svg">
+                    <span class="nav-item">Home</span>
+                </a>
+                <span class="external-label">Home</span>
+            </li>
+            <li>
+                <a href="games.html">
+                    <img class="nav-icon" src="Graphics/Icons/joystick.svg">
+                    <span class="nav-item">Games</span>
+                </a>
+                <span class="external-label">Games</span>
+            </li>
+            <li>
+                <a href="websites.html">
+                    <img class="nav-icon" src="Graphics/Icons/web.svg">
+                    <span class="nav-item">Websites</span>
+                </a>
+                <span class="external-label">Websites</span>
+            </li>
+            <li>
+                <a href="other.html">
+                    <img class="nav-icon" src="Graphics/Icons/star.svg">
+                    <span class="nav-item">Other</span>
+                </a>
+                <span class="external-label">Other</span>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <img class="nav-icon" src="Graphics/Icons/contact_page.svg">
+                    <span class="nav-item">Contact</span>
+                </a>
+                <span class="external-label">Contact</span>
+            </li>
+       </ul>
+    </div>
+    <div class="main-content">
+        <div class="container" style="display: block;">
+            <h1 style="font-size: 64px; margin-top: 16px;">Miscellaneous Adventures</h1>
+            <h2>About</h2>
+            <p style="font-size: 24px; margin-top: 5px;">
+                Asides from making websites and games, I have taken detours to do some other things. From 3D modeling to running a 
+                Youtube channel, here is some of my work that does not fit into any of the other categories.
+            </p>
+        </div>
+        <div class="container" style="display: block;">
+            <h1 style="font-size: 36px; margin-top: 16px;">Blender</h1>
+            <div style="display: flex;">
+                <div id="carousel1" class="slideshow-container">
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">1 / 3</div>
+                        <img src="Graphics/Misc/Blender/blender_1.jpg">
+                        <div class="slideshow-text">Donuts</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">2 / 3</div>
+                        <img src="Graphics/Misc/Blender/blender_2.png">
+                        <div class="slideshow-text">Sink</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">3 / 3</div>
+                        <img src="Graphics/Misc/Blender/blender_3.png">
+                        <div class="slideshow-text">Portrait</div>
+                    </div>
+                    <a class="prev" onclick="cycleSlides(-1, 'carousel1')">&#10094;</a>
+                    <a class="next" onclick="cycleSlides(1, 'carousel1')">&#10095;</a>
+                </div>
+                <p class="item-description">
+                    I learned Blender so I could make 3D models for my games. For this purpose I have used Blender to make objects, 
+                    weapons, enemies, and more. I have learned how to rig characters and unwrap textures. I have also used Blender to Make
+                    models for things like my Youtube channel's banner.
+                </p>
+            </div>
+        </div>
+        <div class="container" style="display: block;">
+            <h1 style="font-size: 36px; margin-top: 16px;">Minecraft Modding</h1>
+            <div style="display: flex;">
+                <div id="carousel2" class="slideshow-container">
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">1 / 4</div>
+                        <img src="Graphics/Misc/Minecraft/minecraft_1.png">
+                        <div class="slideshow-text">Items and Blocks</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">2 / 4</div>
+                        <img src="Graphics/Misc/Minecraft/minecraft_2.png">
+                        <div class="slideshow-text">Mob Spawning</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">3 / 4</div>
+                        <img src="Graphics/Misc/Minecraft/minecraft_3.png">
+                        <div class="slideshow-text">Custom Mobs</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">4 / 4</div>
+                        <img src="Graphics/Misc/Minecraft/minecraft_4.png">
+                        <div class="slideshow-text">Powerful Weapons</div>
+                    </div>
+                    <a class="prev" onclick="cycleSlides(-1, 'carousel2')">&#10094;</a>
+                    <a class="next" onclick="cycleSlides(1, 'carousel2')">&#10095;</a>
+                </div>
+                <p class="item-description">
+                    Before everything else, I once took a shot at Minecraft modding. With the modding I programmed new items and blocks into the game.
+                    In the mod I made, I added about twelve blocks, thirty items, and one enemy to the game. With this project, I got some of my earliest 
+                    computer science experience. I also got to learn more about how Minecraft and game development work.
+                </p>
+            </div>
+        </div>
+        <div class="container" style="display: block;">
+            <h1 style="font-size: 36px; margin-top: 16px;">Youtube Channel</h1>
+            <div style="display: flex;">
+                <div id="carousel3" class="slideshow-container">
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text" style="color: black;">1 / 3</div>
+                        <img src="Graphics/Misc/Youtube/youtube_1.png">
+                        <div class="slideshow-text" style="color: black;">Channel Page</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">2 / 3</div>
+                        <img src="Graphics/Misc/Youtube/youtube_2.png">
+                        <div class="slideshow-text" style="color: black;">Godot Video</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text" style="color: rgb(85, 85, 85);">3 / 3</div>
+                        <img src="Graphics/Misc/Youtube/youtube_3.png">
+                        <div class="slideshow-text" style="color: black;">Pygame</div>
+                    </div>
+                    <a class="prev" style="color: black;" onclick="cycleSlides(-1, 'carousel3')">&#10094;</a>
+                    <a class="next" style="color: black;" onclick="cycleSlides(1, 'carousel3')">&#10095;</a>
+                </div>
+                <p class="item-description">
+                    I have been uploading videos onto Youtube for years. Originally, I used my channel to upload random clips from 
+                    video games. At one point my channel had over 100 videos. However, I decided to delist all of those videos so I could 
+                    focus on using my channel to showcase my game development projects. I started a series of videos where I gave updates 
+                    on my game, Cultus Astrorum, and I also uploaded sections of all of my Pygames. In the process of making these videos I 
+                    have learned quite a bit about video editing and production. Overall, it has been a nice place for cataloging my work.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        @nate.r.laing@gmail.com - (470) 808-9146
+    </footer>
+</body>
+
+<script>
+    let btn = document.querySelector('#btn');
+    let sidebar = document.querySelector('.sidebar');
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    };
+
+    document.addEventListener('scroll', function()
+    {
+        let currentScroll = window.scrollY + window.innerHeight;
+        let footer = document.querySelector('footer');
+
+        if (currentScroll + 200 > document.body.scrollHeight)
+        {
+            footer.classList.add('active');
+        }
+        else {
+            footer.classList.remove('active');
+        }
+    }
+    )
+
+    let slideIndex = 1;
+    let slide_containers = document.getElementsByClassName("slideshow-container");
+
+    for (i = 0; i < slide_containers.length; i++)
+    {
+        showSlides(slideIndex, slide_containers[i].id);
+    }
+
+    function cycleSlides(n, i) {
+        showSlides(slideIndex += n, i);
+    }
+
+    function showSlides(n, j) {
+        let i;
+        console.log(j);
+        let slides = document.getElementById(j).children;
+        slides = Array.from(slides).slice(0, slides.length - 2);
+        console.log(slides);
+        if (n > slides.length) {slideIndex = 1}   
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[slideIndex-1].style.display = "block";  
+    }
+</script>
+</html>

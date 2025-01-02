@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathaniel Laing Portfolio</title>
+    <link rel="stylesheet" href="Style/styles.css">
+
+</head>
+<body style="background-color: whitesmoke; margin-bottom: 250px;">
+    <div class="sidebar">
+       <div class="top">
+            <div class="icon">
+                <img src="Graphics/Icons/block.png">
+                <span>Nate Laing</span>
+            </div>
+            <img id="btn" src="Graphics/Icons/menu.svg">
+       </div>
+       <div class="user">
+            <img src="Graphics/Icons/me_icon.JPG" class="user-img">
+            <div style="margin-top: 25px;">
+                Explore
+            </div>
+       </div>
+       <ul>
+            <li>
+                <a href="index.html">
+                    <img class="nav-icon" src="Graphics/Icons/home.svg">
+                    <span class="nav-item">Home</span>
+                </a>
+                <span class="external-label">Home</span>
+            </li>
+            <li>
+                <a href="games.html">
+                    <img class="nav-icon" src="Graphics/Icons/joystick.svg">
+                    <span class="nav-item">Games</span>
+                </a>
+                <span class="external-label">Games</span>
+            </li>
+            <li>
+                <a href="websites.html">
+                    <img class="nav-icon" src="Graphics/Icons/web.svg">
+                    <span class="nav-item">Websites</span>
+                </a>
+                <span class="external-label">Websites</span>
+            </li>
+            <li>
+                <a href="other.html">
+                    <img class="nav-icon" src="Graphics/Icons/star.svg">
+                    <span class="nav-item">Other</span>
+                </a>
+                <span class="external-label">Other</span>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <img class="nav-icon" src="Graphics/Icons/contact_page.svg">
+                    <span class="nav-item">Contact</span>
+                </a>
+                <span class="external-label">Contact</span>
+            </li>
+       </ul>
+    </div>
+    <div class="main-content">
+        <div class="container" style="display: block;">
+            <h1 style="font-size: 48px; margin-top: 32px;">Contact</h1>
+            <p style="font-size: 24px; margin-top: 5px; margin-bottom: 25px; margin-top: 25px;">
+                <img src="Graphics/Icons/mail.svg"> Email: nate.r.laing@gmail.com
+            </p>
+            <p style="font-size: 24px; margin-top: 5px; margin-bottom: 25px;">
+                <img src="Graphics/Icons/call.svg"> Phone Number: (470) 808-9146
+            </p>
+            <p style="font-size: 24px; margin-top: 5px; margin-bottom: 25px;">
+                <img src="Graphics/Icons/youtube.svg"> Youtube: @epichuman3198
+            </p>
+            <p style="font-size: 24px; margin-top: 5px; margin-bottom: 25px;">
+                <img src="Graphics/Icons/camera.svg"> Instagram: @laingNathaniel
+            </p>
+            <p style="font-size: 24px; margin-top: 5px; margin-bottom: 25px;">
+                <img src="Graphics/Icons/database.svg"> Github: @Doominator-726
+            </p>
+        </div>
+    </div>
+    <footer>
+        @nate.r.laing@gmail.com - (470) 808-9146
+    </footer>
+</body>
+
+<script>
+    let btn = document.querySelector('#btn');
+    let sidebar = document.querySelector('.sidebar');
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    };
+
+    document.addEventListener('scroll', function()
+    {
+        let currentScroll = window.scrollY + window.innerHeight;
+        let footer = document.querySelector('footer');
+
+        if (currentScroll + 200 > document.body.scrollHeight)
+        {
+            footer.classList.add('active');
+        }
+        else {
+            footer.classList.remove('active');
+        }
+    }
+)
+</script>
+</html>

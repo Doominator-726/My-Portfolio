@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathaniel Laing Portfolio</title>
+    <link rel="stylesheet" href="Style/styles.css">
+
+</head>
+<body style="background-color: whitesmoke; margin-bottom: 250px;">
+    <div class="sidebar">
+       <div class="top">
+            <div class="icon">
+                <img src="Graphics/Icons/block.png">
+                <span>Nate Laing</span>
+            </div>
+            <img id="btn" src="Graphics/Icons/menu.svg">
+       </div>
+       <div class="user">
+            <img src="Graphics/Icons/me_icon.JPG" class="user-img">
+            <div style="margin-top: 25px;">
+                Explore
+            </div>
+       </div>
+       <ul>
+            <li>
+                <a href="index.html">
+                    <img class="nav-icon" src="Graphics/Icons/home.svg">
+                    <span class="nav-item">Home</span>
+                </a>
+                <span class="external-label">Home</span>
+            </li>
+            <li>
+                <a href="games.html">
+                    <img class="nav-icon" src="Graphics/Icons/joystick.svg">
+                    <span class="nav-item">Games</span>
+                </a>
+                <span class="external-label">Games</span>
+            </li>
+            <li>
+                <a href="websites.html">
+                    <img class="nav-icon" src="Graphics/Icons/web.svg">
+                    <span class="nav-item">Websites</span>
+                </a>
+                <span class="external-label">Websites</span>
+            </li>
+            <li>
+                <a href="other.html">
+                    <img class="nav-icon" src="Graphics/Icons/star.svg">
+                    <span class="nav-item">Other</span>
+                </a>
+                <span class="external-label">Other</span>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <img class="nav-icon" src="Graphics/Icons/contact_page.svg">
+                    <span class="nav-item">Contact</span>
+                </a>
+                <span class="external-label">Contact</span>
+            </li>
+       </ul>
+    </div>
+    <div class="main-content">
+        <div class="container" style="display: block;">
+            <h1 style="font-size: 64px; margin-top: 16px;">Websites</h1>
+            <h2>About</h2>
+            <p style="font-size: 24px; margin-top: 5px;">
+                Websites are one of the biggest applications of computer science. Everyone uses websites, whether that be on phones or computers. 
+                I myself have created various websites, which you can find below.
+            </p>
+        </div>
+        <div class="container" style="display: block;">
+            <h1 style="font-size: 36px; margin-top: 16px;">Cool Godot Tools</h1>
+            <div style="display: flex;">
+                <div id="carousel1" class="slideshow-container">
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text" style="color: black;">1 / 3</div>
+                        <img src="Graphics/Websites/Godot/godot_2.png">
+                        <div class="slideshow-text" style="color: black;">Title Page</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">2 / 3</div>
+                        <img src="Graphics/Websites/Godot/godot_1.png">
+                        <div class="slideshow-text" style="color: black;">Graphics</div>
+                    </div>
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text">3 / 3</div>
+                        <img src="Graphics/Websites/Godot/godot_3.png">
+                        <div class="slideshow-text" style="color: black">Sound</div>
+                    </div>
+                    <a class="prev" style="color: black;" onclick="cycleSlides(-1, 'carousel1')">&#10094;</a>
+                    <a class="next" style="color: black;" onclick="cycleSlides(1, 'carousel1')">&#10095;</a>
+                </div>
+                <p class="item-description">
+                    For this project, I decided to combine my interest in game development with my interest in web design. I noticed that I 
+                    had found quite a few useful game-dev tools online. I wanted to share these tools so I created a website for it. On the site 
+                    you can find various tools and resources that may be helpful for working with Godot. The website has four sections: Graphics, 
+                    Sound, Help, and Design. In these sections you can find everything from skybox generators to sound effect libraries.
+                </p>
+            </div>
+        </div>
+        <div class="container" style="display: block;">
+            <h1 style="font-size: 36px; margin-top: 16px;">Calculator</h1>
+            <div style="display: flex;">
+                <div id="carousel2" class="slideshow-container">
+                    <div class="slideshow-image">
+                        <div class="slideshow-number-text" style="color: black;">1 / 1</div>
+                        <img src="Graphics/Websites/Calculator/calc_1.png">
+                    </div>
+                    <a class="prev" style="color: rgb(0, 0, 0, 0);" onclick="cycleSlides(-1, 'carousel2')">&#10094;</a>
+                    <a class="next" style="color: rgb(0, 0, 0, 0);" onclick="cycleSlides(1, 'carousel2')">&#10095;</a>
+                </div>
+                <p class="item-description">
+                    I wanted to familarize myself with integrating Javascript into my websites, so I build a calculator website. The website 
+                    allows you to perform various operations on numbers. The numbers can be as many digits long as you want, with decimals. 
+                    You can also make an equation with as many operations as you want: The calculator will still solve it.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        @nate.r.laing@gmail.com - (470) 808-9146
+    </footer>
+</body>
+
+<script>
+    let btn = document.querySelector('#btn');
+    let sidebar = document.querySelector('.sidebar');
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    };
+
+    document.addEventListener('scroll', function()
+    {
+        let currentScroll = window.scrollY + window.innerHeight;
+        let footer = document.querySelector('footer');
+
+        if (currentScroll + 200 > document.body.scrollHeight)
+        {
+            footer.classList.add('active');
+        }
+        else {
+            footer.classList.remove('active');
+        }
+    }
+    )
+
+    let slideIndex = 1;
+    let slide_containers = document.getElementsByClassName("slideshow-container");
+
+    for (i = 0; i < slide_containers.length; i++)
+    {
+        showSlides(slideIndex, slide_containers[i].id);
+    }
+
+    function cycleSlides(n, i) {
+        showSlides(slideIndex += n, i);
+    }
+
+    function showSlides(n, j) {
+        let i;
+        console.log(j);
+        let slides = document.getElementById(j).children;
+        slides = Array.from(slides).slice(0, slides.length - 2);
+        console.log(slides);
+        if (n > slides.length) {slideIndex = 1}   
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[slideIndex-1].style.display = "block";  
+    }
+</script>
+</html>
